@@ -1,0 +1,18 @@
+
+
+  .popup-events {
+      & .modal-content {
+        width: 100% !important;
+      }
+      .react-multi-carousel-list {
+        position: unset !important;
+      }
+      
+      .react-multi-carousel-dot-list  {
+        bottom: -18px !important;
+      }
+
+      img { 
+        width: -webkit-fill-available;
+      }
+  }

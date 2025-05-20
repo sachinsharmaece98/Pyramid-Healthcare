@@ -1,0 +1,81 @@
+.service-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  justify-content: center;
+  margin-block: 40px;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-rows: auto 2fr;
+  position: relative;
+
+  .service-card {
+    padding: 1rem 0;
+    margin: 0px 20px;
+    width: 90%;
+    min-height: 200px;
+    height: 100%;
+    align-content: center;
+    border-radius: 6px;
+    border-radius: 10px;
+    background-color: rgb(241, 241, 241);
+
+    .service-header {
+      font-size: 21px;
+      font-weight: 700;
+    }
+    @media (max-width: 768px) {
+      width: 85%;
+    }
+  }
+  .react-multi-carousel-list {
+    position: unset !important;
+  }
+  
+  .react-multi-carousel-dot-list  {
+    bottom: -30px !important;
+  }
+  
+  .service-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+  }
+}
+
+.about-us-contents {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  justify-content: center;
+  margin-block: 40px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-rows: auto 2fr;
+
+  .about-us-content {
+    padding: 20px;
+    margin: 10px;
+    width: 500px;
+    border-radius: 6px;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  .title-container {
+    color: rgba(35, 35, 35);
+  }
+
+  .title {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0 !important;
+  }
+
+  .question {
+    font-size: 30px;
+    font-weight: 500;
+  }
+}

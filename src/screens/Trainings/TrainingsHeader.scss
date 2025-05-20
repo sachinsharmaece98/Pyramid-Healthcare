@@ -1,0 +1,67 @@
+@import "../../shared/styles/_variables.scss";
+
+.th-main {
+  position: relative;
+  //   margin-top: -70px;
+  height: 70vh;
+  max-height: 480px;
+
+  @media (max-width: 700px) {
+    height: 40vh;
+  }
+
+  .img-left {
+    opacity: 0.3;
+    width: 40%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+
+  .th-main-view {
+    position: absolute;
+    inset: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: center;
+    justify-content: center;
+    left: 10rem;
+
+    @media (max-width: 600px) {
+      left: 20px;
+      width: 80%;
+    }
+
+    .text-1 {
+      // font-size: 0px;
+      text-align: start;
+      font-weight: 400;
+
+      @media screen and (max-width: 1000px) {
+        font-size: 24px;
+      }
+    }
+
+    .text-2 {
+      font-size: 50px !important;
+      text-align: start;
+      // width: 290px;
+      font-weight: bold;
+      color: $primary-color;
+      
+      @media screen and (max-width: 1000px) {
+        font-size: 24px !important;
+      }
+    }
+
+    .btn-expore-more {
+      width: fit-content;
+      background: transparent;
+      border: 1px solid gray;
+      padding-inline: 20px;
+      padding-block: 5px;
+      margin-top: 10px;
+    }
+  }
+}

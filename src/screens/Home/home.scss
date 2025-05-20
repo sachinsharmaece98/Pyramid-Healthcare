@@ -1,0 +1,162 @@
+@import "../../shared/styles/variables";
+.what-we-do-container {
+  height: 100%;
+  margin-bottom: 2.8rem;
+}
+
+/* src/components/ScrollImage.css */
+.image-container1 {
+  height: 55vh;
+  /* Adjust height as needed to make scrolling noticeable */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgb(8, 111, 182);
+  background: linear-gradient(90deg, rgba(8, 111, 182, 1) 34%, rgba(0, 0, 0, 1) 89%);
+}
+
+.image-container2,
+.image-container4,
+.image-container6 {
+  height: 55vh;
+  /* Adjust height as needed to make scrolling noticeable */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 118, 106, 1) 55%);
+}
+
+.image-container3,
+.image-container5 {
+  height: 55vh;
+  /* Adjust height as needed to make scrolling noticeable */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgb(8, 111, 182);
+  background: linear-gradient(90deg, rgba(8, 111, 182, 1) 34%, rgba(0, 0, 0, 1) 89%);
+}
+
+.image-container:nth-child(odd) {
+  height: 55vh;
+  /* Adjust height as needed to make scrolling noticeable */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgb(8, 111, 182);
+  background: linear-gradient(90deg, rgba(8, 111, 182, 1) 34%, rgba(0, 0, 0, 1) 89%);
+}
+
+.image-container:nth-child(even) {
+  height: 55vh;
+  /* Adjust height as needed to make scrolling noticeable */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 118, 106, 1) 55%);
+}
+
+.scroll-image {
+  width: 25vw;
+}
+
+// .sub-scroll-image {
+//   width: 10vh;
+// }
+
+#image1,
+#image2,
+#image3,
+#image4,
+#image5,
+#image6 {
+  position: relative;
+  // bottom: 3%;
+}
+#image:nth-child(odd) {
+  position: relative;
+}
+#image:nth-child(even) {
+  position: relative;
+}
+
+.triangleImg {
+  position: relative;
+  left: 32vw;
+  top: 18vh;
+  width:18vw;
+  // opacity: 1 !important;
+  /* Full width of the viewport */
+  // height: auto;
+  z-index: 1;
+  @media (max-width: 700px) {
+    width:30vw;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .image-container {
+    height: 30vh !important;
+  }
+
+  .scroll-image {
+    width: 28vh;
+  }
+
+  #image1,
+  #image2,
+  #image3,
+  #image4,
+  #image5,
+  #image6 {
+    position: relative;
+    // bottom: 8%;
+  }
+  #image:nth-child(odd) {
+    position: relative;
+  }
+  #image:nth-child(even) {
+    position: relative;
+  }
+
+  // #image6 {
+  //   position: relative;
+  //   left: 3%;
+  //   width: 28vw;
+  // }
+}
+
+@media only screen and (max-width: 430px) {
+  #image1,
+  #image2,
+  #image3,
+  #image4,
+  #image5,
+  #image6 {
+    position: relative;
+    // bottom: 8%;
+  }
+  #image:nth-child(odd) {
+    position: relative;
+  }
+  #image:nth-child(even) {
+    position: relative;
+  }
+}
+
+.react-multi-carousel-dot--active button {
+  background: $primary-color;
+}
+
+.react-multi-carousel-dot button {
+  border-color: $primary-color;
+}
+
+.svg-dynamic {
+  path {
+    position: fixed;
+    stroke : transparent !important;
+  }
+}

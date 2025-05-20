@@ -1,0 +1,127 @@
+@import "../../../../src/shared/styles/variables.scss";
+
+.daily-update-main {
+  color: rgba(35, 35, 35);
+  padding-top: 30px;
+
+  .title-updates {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 50px;
+    margin-left: 160px;
+
+    .question {
+      font-size: 30px;
+      font-weight: 500;
+    }
+  }
+}
+
+.daily-update-products {
+  margin-left: 10vw;
+  margin-right: 10vw;
+  // display: flex;
+  // flex-wrap: wrap;
+  // grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  // grid-template-rows: auto 1fr;
+  // //gap: 1px;
+  // justify-content: center;
+  margin-top: 20px;
+
+  .daily-update-product {
+    // width: 290px;
+    padding-left: 0px;
+    margin: 10px;
+    // box-shadow: 0 0 10px rgba(33,33,33,.2);
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    z-index: 1000;
+
+    .img-event {
+      object-fit: cover;
+      height: 120px;
+      width: 100%;
+      background-color: beige;
+    }
+
+    .details {
+      padding: 10px;
+      color: $primary-color;
+      gap: 6px;
+      width: 290px;
+      display: grid;
+      background-color: white;
+
+      .date {
+        display: flex;
+        background-color: $primary-color;
+        gap: 10px;
+        color: white;
+        font-size: 12px;
+        width: max-content;
+        padding-inline: 10px;
+        padding-block: 2px;
+        margin-top: -20px;
+        border-radius: 3px;
+
+        .icon {
+          height: 14px;
+        }
+      }
+
+      .icon-text {
+        display: flex;
+        gap: 10px;
+        color: rgba(35, 35, 35, 0.7);
+        font-size: 12px;
+
+        .icon {
+          height: 12px;
+          margin-top: 4px;
+        }
+
+        .start-end-date {
+          display: grid;
+        }
+      }
+
+      .register {
+        color: black;
+        font-size: 14px;
+        margin-top: 15px;
+      }
+    }
+  }
+
+  .daily-update-product:hover{
+    transition: box-shadow .3s;
+    box-shadow:  0 0 20px rgba(33,33,33,.2);
+  }
+
+  .react-multi-carousel-list {
+    position: unset;
+  }
+
+  .react-multi-carousel-dot-list {
+    bottom: -20px;
+  }
+}
+
+
+@media screen and (max-width: 1000px) {
+  .title-updates {
+    margin-left: 100px !important;
+  }
+}
+
+.what-we-do-animation {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  height: 10px;
+  width: 10px;
+
+}

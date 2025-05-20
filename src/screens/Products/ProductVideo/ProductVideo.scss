@@ -1,0 +1,96 @@
+@import "../../../../src/shared/styles/variables.scss";
+
+.productVideo-main {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    display: flex;
+    justify-content: space-between;
+    height: 500px;
+    width: 100% !important;
+
+    .productVideo-text {
+        flex-wrap: wrap;
+        gap: 5px;
+        margin-block: 30px;
+        grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+        grid-template-rows: auto 2fr;
+        margin-left: 280px;
+        margin-top: 120px;
+        font-weight: 700;
+        font-size: 25px;
+
+        p {
+            margin-top: 10px;
+            font-size: 15px;
+        }
+    }
+
+    .productVideo-img {
+        width: 60%;
+        height: 285px;
+        background: linear-gradient(90deg, rgba(0, 0, 0, 1) 45%, rgb(107, 36, 33) 92%);
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .video-gradients-title {
+        background-image: linear-gradient(to right, $primary-color, $primary-color, #a3bef8);
+        border-radius: 1px;
+        color: white;
+        font-size: 18px;
+        padding-right: 130px;
+        margin-top: 110px;
+        width: 100%;
+    }
+
+    .video-vertical-line {
+        border-left: 1px solid #fff;
+        height: 70px;
+        position: static;
+        margin-top: 13px;
+        left: 77%;
+        display: flex;
+        justify-content: flex-start;
+        width: 100%;
+    }
+}
+
+.video-img-left {
+    margin-left: 125px;
+}
+
+.video-img-right {
+    overflow: hidden;
+}
+
+@media screen and (max-width: 1000px) {
+    .productVideo-main {
+        height: 730px;
+        flex-direction: column !important;
+        overflow: hidden;
+    }
+
+    .video-gradients-title {
+        font-size: 15px !important;
+        padding-right: 85px !important;
+    }
+
+    .productVideo-text {
+        margin-left: 80px !important;
+
+    }
+
+    .video-img-left {
+        margin-left: 10px !important;
+    }
+
+    .productVideo-img {
+        width: 100% !important;
+        margin-bottom: 150px !important;
+        height: 420px;
+    }
+
+}

@@ -1,0 +1,172 @@
+@import '../../../shared/styles/variables';
+
+.footer {
+    height: auto;
+    background: #0D66A2;
+    text-align: center;
+    font-family: system-ui;
+    font-size: 35px;
+    padding: 55px;
+}
+
+.footer-body-center {
+    margin-top: 35px;
+}
+
+.footer-input-div {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.footer-subscribe {
+    color: #fff;
+    font-weight: 500;
+    font-size: 30px;
+}
+
+.footer-col-2-3 {
+    color: #fff;
+    font-size: 22px;
+    font-weight: bold;
+    position: relative;
+    resize: both;
+}
+
+.pyramid-text {
+    color: #fff;
+    text-align: left;
+    font-size: 16px !important;
+    margin-top: 25px;
+    max-width: 250px;
+}
+
+.footer-input-group {
+    width: 600px !important;
+    margin-top: 5px !important;
+}
+
+.input-group-text {
+    color: $primary-color !important;
+    font-size: 15px !important;
+    font-weight: 500 !important;
+}
+
+.link-div {
+    ul {
+        list-style: none;
+        font-size: 16px;
+        margin: 0px;
+        padding: 0px;
+
+        li {
+            color: #fff;
+            text-align: left;
+            position: relative;
+            resize: both;
+            font-size: 16px;
+            font-weight: 450;
+            cursor: pointer;
+            margin-bottom: 5px;
+        }
+    }
+}
+
+.vertical {
+    border-left: 1px solid rgb(83 166 253);
+    height: 280px;
+    // position: absolute;
+    margin-top: 30px;
+    left: 70%;
+    display: inline-flex;
+
+    @media (max-width: 768px) {
+        display: none;
+    }
+}
+
+.footer-main-div {
+    margin-top: 60px;
+    @media (max-width: 768px) {
+        margin-top: 50px;
+    }
+
+}
+
+
+.icon-address {
+    color: #fff;
+    font-size: 16px;
+}
+
+.footer-copyright {
+    display: flex;
+    justify-content: left;
+    margin-top: 15px;
+
+    span {
+        color: #fff !important;
+    }
+}
+
+.footer-pyramid-logo {
+    padding-top: 15px;
+    height: 100px;
+    padding-inline: 10px;
+}
+
+.address-line {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    span {
+        display: flex;
+        margin: 10px
+    }
+}
+
+.footer-address {
+    display: flex;
+}
+
+.footer-mobile {
+    display: flex;
+}
+
+.footer-email {
+    display: flex;
+}
+
+
+@media (max-width: 1000px) {
+    .footer-input-div {
+        flex-direction: column;
+    }
+
+    .footer-input-group {
+        max-width: 100% !important;
+        align-self: center !important;
+    }
+}
+
+@media (max-width: 483px) {
+    .logo-center {
+        text-align: center;
+    }
+    .pyramid-text{
+        min-width: 100% !important;
+    }
+
+}
+
+@media (max-width:420px) {
+    .footer-input-group {
+        flex-direction: column;
+        min-width: 300px !important;
+        gap: 20px;
+
+        .form-control {
+            min-width: 300px !important;
+        }
+    }
+}

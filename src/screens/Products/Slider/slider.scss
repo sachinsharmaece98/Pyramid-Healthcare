@@ -1,0 +1,25 @@
+.bg-img {
+  background-image: url('../../../assets/images/bg-img.jpg') !important;
+  background: no-repeat;
+  background-size: cover;
+}
+
+.item {
+  border: 1px solid white;
+  background: black;
+  min-height: 370px;
+  height: auto;
+  width: 300px;
+  border-radius: 20px;
+}
+
+.arrow-btn-slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .arrow-btn-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

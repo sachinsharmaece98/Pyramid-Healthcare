@@ -1,0 +1,129 @@
+@import "../../../../src/shared/styles/variables.scss";
+
+.why-us-main {
+  position: relative;
+  //padding: 60px 0px 0px 60px;
+  padding: 10px;
+  color: rgba(35, 35, 35);
+  padding-top: 30px;
+  overflow: hidden;
+
+  .title {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 2px;
+    margin-bottom: 50px;
+
+    .question {
+      font-size: 30px;
+
+
+      font-weight: 500;
+
+      @media (max-width:788px) {
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+.why-us-products {
+  margin: auto;
+  display: grid;
+  width: 80%;
+  justify-content: center;
+  // flex-wrap: wrap;
+  gap: 25px;
+
+  // justify-content: center;
+  grid-template-columns: repeat(3, 1fr);
+  // @media screen and (min-width : 1430px) {
+  // }
+
+  // @media screen and (max-width: 1430px) {
+  //   // height: 250px;
+  //   grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  // }
+  @media screen and (max-width: 500px) {
+    // height: 250px;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  }
+
+  // margin-block: 40px;
+  // grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+  // grid-template-rows: auto 2fr;
+  .why-us-product {
+    justify-self: center;
+    padding: 20px;
+    margin: 10px;
+    width: 100%;
+    border: 1px solid lightgray;
+    border-radius: 6px;
+    background-color: white;
+    z-index: 1;
+
+    .img-title {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 10px;
+      color: rgba(35, 35, 35);
+
+      img {
+        width: 50px;
+        height: 50px;
+        background-color: $primary-color;
+        border-radius: 50%;
+        padding: 10px;
+      }
+
+      span {
+        font-size: 20px;
+        font-weight: 600;
+      }
+    }
+
+    .desc {
+      font-size: 16px;
+      color: rgba(35, 35, 35, 0.7);
+    }
+  }
+
+  .why-us-product:hover {
+    transition: box-shadow .3s;
+    box-shadow: 0 0 20px rgba(33, 33, 33, .2);
+  }
+}
+
+
+html {
+  overflow-x: hidden;
+}
+
+.why-us-animation {
+  position: absolute;
+  top: 50%;
+  right: 40px;
+  height: 10px;
+  width: 10px;
+
+}
+
+.why-us-animation-2 {
+  position: absolute;
+  top: 50%;
+  right: 40px;
+  height: 50%;
+  width: 10px;
+  // background-color: aquamarine;
+}
+
+.why-us-animation-1 {
+  position: absolute;
+  top: 0;
+  right: 40px;
+  height: 50%;
+  width: 10px;
+  // background-color: rgba(200, 221, 41, 0.245);
+}

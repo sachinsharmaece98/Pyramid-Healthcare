@@ -1,0 +1,140 @@
+@import "../../../../src/shared/styles/variables.scss";
+
+.social-network-main {
+  background-image: linear-gradient(to right, #040404, $primary-color);
+  color: rgba(35, 35, 35);
+  position: relative;
+
+  .sub {
+    .title {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      gap: 10px;
+
+      .question {
+        margin-block: 30px;
+        text-align: center;
+        color: white;
+      }
+
+    }
+
+  }
+}
+
+.social-network-products {
+  margin-left: 5rem;
+  margin-right: 4.3rem;
+  // padding-inline: 100px;
+  // display: flex;
+  // justify-content: center;
+  // flex-wrap: wrap;
+  // grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  // gap: 6px;
+  position: relative;
+  padding-bottom: 30px;
+
+  .social-network-product {
+    // width: 290px;
+    // background-color: white;
+    // margin-right: 20px;
+    padding: 10px;
+    z-index: 1000;
+
+    .img-event {
+      height: 170px;
+      width: 100%;
+      padding: 10px;
+    }
+
+    .details {
+      padding: 10px;
+      gap: 6px;
+      display: grid;
+
+      .name {
+        font-size: 16px;
+        font-weight: 500;
+        color: $primary-color;
+      }
+
+      .read-more {
+        color: black;
+        font-size: 14px;
+        margin-top: 15px;
+        border: 1px solid gray;
+        width: fit-content;
+        background-color: transparent;
+      }
+    }
+  }
+
+  .react-multi-carousel-list {
+    position: unset;
+  }
+
+  .react-multi-carousel-dot-list {
+    bottom: -20px;
+  }
+
+  .react-multiple-carousel__arrow {
+    background-color: rgba(255, 255, 255, 0.613);
+    @media (min-width: 500px) {
+      min-width: 30px !important;
+      min-height: 30px !important;
+    }
+  }
+
+  .react-multiple-carousel__arrow:hover {
+    background-color: rgba(165, 159, 159, 0.613);
+  }
+
+  .react-multiple-carousel__arrow--left {
+    left: -3rem !important;
+    @media (min-width: 500px) {
+      left: -4rem !important;
+    }
+  }
+
+  .react-multiple-carousel__arrow--right{
+    right: -3rem !important;
+    @media (min-width: 500px) {
+      right: -4rem !important;
+    }
+  }
+}
+
+.img-social-medias {
+  object-fit: contain;
+  align-self: flex-end;
+  width: 160px;
+  margin-top: -99px;
+}
+
+// @media screen and (max-width: 1000px) {
+//   .social-network-products{
+//       padding: 0px !important;
+//       margin-left: 20px;
+
+//   }
+//   .social-network-product{
+//     margin-bottom: 10px !important;
+//   }
+//   .title {
+//     display: flex !important;
+//     justify-content: center !important;
+//     margin-left: 80px !important;
+//   }
+//   .img-social-medias {
+//     display: none !important;
+//   }
+// }
+.social-network-animation {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  
+}

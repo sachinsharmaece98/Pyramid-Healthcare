@@ -1,0 +1,60 @@
+@import "../../../../src/shared/styles/variables.scss";
+
+.healthcare-main {
+    display: flex;
+    justify-content: space-between;
+
+    .healthcare-service {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px;
+        margin-block: 30px;
+        grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+        grid-template-rows: auto 2fr;
+        margin-left: 170px;
+    }
+    .healthcare-quick-msg{
+        margin-top: 150px;
+        background-color: $primary-color;
+        width: 120px;
+        height: 100px;
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+        color:  #fff;
+    }
+
+    .healthcare-inner {
+        padding: 20px;
+        margin: 10px;
+        width: 300px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 15px;
+
+        .healthcare-img {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 10px;
+            color: rgba(35, 35, 35);
+            justify-content: center;
+
+            img {
+                width: 20px;
+                height: 20px;
+                background-color: $primary-color;
+                border-radius: 50%;
+                padding: 10px;
+            }
+
+            span {
+                font-size: 25px;
+                font-weight: 700;
+            }
+        }
+
+        .desc {
+            font-size: 15px;
+            color: rgba(35, 35, 35, 0.7);
+        }
+    }
+}

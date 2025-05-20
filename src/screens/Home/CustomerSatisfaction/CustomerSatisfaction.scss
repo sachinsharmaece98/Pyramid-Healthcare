@@ -1,0 +1,135 @@
+@import "../../../../src/shared/styles/variables.scss";
+
+.cs-all-main {
+  background-image: linear-gradient(to right, $primary-color, #040404);
+  height: 100%;
+  flex-wrap: wrap;
+  position: relative;
+
+  .cs-main {
+    // background-image: linear-gradient(to right, $primary-color, #040404);
+    color: rgba(35, 35, 35);
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    width: 80%;
+
+    @media(max-width:600px) {
+      flex-direction: column;
+      width: 100%;
+    }
+
+    //overflow: hidden;
+
+    .img-cs {
+      width: 50%;
+      object-fit: cover;
+      align-self: flex-end;
+      // height: 350px;
+      margin-bottom: -5px;
+
+      @media (max-width: 600px) {
+        // display: none;
+        width: auto;
+      }
+    }
+
+    .details {
+      color: white;
+      width: 50%;
+      display: flex;
+      flex-wrap: wrap !important;
+      padding: 30px;
+      justify-content: space-around;
+      flex-direction: column;
+
+      @media (max-width:600px) {
+        width: 100%;
+      }
+
+      //padding-block: 10px;
+      .title-1 {
+        font-size: 30px;
+        font-weight: 500;
+      }
+
+      .count-view-main {
+        display: flex;
+      }
+
+      .count-view {
+        color: white;
+        display: flex;
+        flex-direction: column;
+        width: 150px;
+        font-size: 14px;
+
+        .count {
+          font-size: 35px;
+          font-weight: 800;
+          // color: $primary-color;
+        }
+      }
+    }
+  }
+
+  .img-banner-cs {
+    flex-wrap: wrap;
+    height: 130px !important;
+    margin-top: 71px;
+    margin-right: -11px !important;
+  }
+}
+
+.cs-image-right-corner {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: -195px;
+  height: 200px;
+}
+
+@media screen and (max-width: 1000px) {
+  .cs-all-main {
+    background-image: linear-gradient(to bottom, $primary-color, #040404);
+    overflow: hidden;
+  }
+
+  //   .img-cs {
+  //     width: fit-content;
+  //   }
+  // }
+
+  // .img-banner-cs {
+  //   display: none !important;
+  // }
+
+  // .details {
+  //   // padding: 10px !important;
+
+  //   .title-1 {
+  //     display: block;
+  //     width: 250px;
+  //     word-wrap: break-word;
+  //   }
+
+  //   .title-2 {
+  //     display: block;
+  //     width: 350px;
+  //     word-wrap: break-word;
+  //   }
+  // }
+
+  // .count-view-main {
+  //   word-break: break-word !important;
+  //   width: 405px !important;
+  // }
+  
+}
+.cs-all-animation {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  
+  height: 10px;
+  width: 10px;
+}

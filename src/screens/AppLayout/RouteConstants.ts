@@ -1,0 +1,11 @@
+export const PATH_HOME = "/";
+export const PATH_CONTACTS = "/contacts";
+export const PATH_PRODUCTS = "/product";
+export const PATH_ABOUT_US = "/aboutUs";
+export const PATH_TEAM = "/team";
+export const PATH_DEMO = "/demo";
+export const PATH_EVENTS = "/events";
+export const PATH_TRAININGS = "/trainings";
+export const PATH_TRAININGS_DETAILS = "/trainingsDetails";
+export const PATH_TRAININGSDETAILS = "/training-details";
+export const PATH_BLOGS = "/blogs";
